@@ -111,6 +111,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  padding-bottom: 15px;
 }
 
 .logo-link {
@@ -215,6 +216,10 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
+.services-header-img {
+  width: 100%;
+}
+
 .services-headline,
 .vision-headline {
   font-size: 3.6rem;
@@ -229,7 +234,7 @@ nav a:hover {
 }
 
 .content-item {
-  width: 48.9;
+  width: 48.9%;
   border: 1px solid black;
   margin: 20px 0px;
   display: flex;
@@ -242,10 +247,11 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
-.content-item a {
-  font-size: 80%;
+.content-item button {
+  font-size: 1.2rem;
   border: 1px solid black;
   padding: : 0px 15px;
+  border-radius: 5px;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -256,12 +262,16 @@ nav a:hover {
 
 .about-container {
   display: flex;
+  max-width: 880px;
+  width: 100%;
   justify-content: space-between;
+  align-items: center;
   margin-top: 30px;
+
 }
 
 .about-services {
-  width: 450px;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -279,8 +289,13 @@ nav a:hover {
 }
 
 .about-services ul li {
+  font-size: 1.6em;
   list-style-position: inside;
   margin: 7px 0;
+}
+
+.services-info-img {
+  width: 48%;
 }
 
 .vision-header {
@@ -340,6 +355,7 @@ footer {
 @media (max-width: 800px) {
   .page {
     max-width: 768px;
+    width: 98%;
   }
 
 
@@ -371,6 +387,11 @@ footer {
 
   }
 
+  /* .about-services {
+    width: 100%;
+  } */
+
+
 
   #head-image {
     display: none;
@@ -385,9 +406,11 @@ footer {
     width: 48.8%;
   }
 
-  .middle-img {
-    width: 100%;
+  .services-info-img {
+    height: auto;
+    align-self: flex-start;
   }
+
 }
 
 @media (max-width: 500px) {
@@ -408,6 +431,7 @@ footer {
 
   nav {
     width: 100%;
+    margin: 0px;
     align-items: center;
     flex-direction: column;
   }
@@ -419,6 +443,7 @@ footer {
   .logo-link {
     display: flex;
     justify-content: center;
+    margin: 0px;
     width: 100%;
     order: -1;
     padding-top: -5px;
@@ -472,5 +497,22 @@ footer {
   .middle-img {
     width: 100%;
     /* align-self: center; */
+  }
+
+  .services-header,
+  .vision-header {
+    margin-top: 0px;
+  }
+
+  .content-item {
+    width: 100%;
+  }
+
+  .about-services {
+    width: 100%;
+  }
+
+  .services-info-img {
+    display: none;
   }
 }
